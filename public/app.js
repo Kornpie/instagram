@@ -6,10 +6,13 @@ const addImagestoGallery = (res) => {
         <section class="photo">
         <header class="photo__header">
             <div class="photo__header-column">
-                <img class="photo__avatar" src="${element.user.profile_image.small}" alt="">
+            <a href="profile.html?username=${element.user.username}">
+                <img class="photo__avatar" src="${element.user.profile_image.small}" alt=""> </a>
             </div>
             <div class="photo__header-column">
+            <a href="profile.html?username=${element.user.username}">
                 <span class="photo__username">${element.user.username}</span>
+                </a>
             </div>
         </header>
         <div class="photo__file-container">
@@ -27,7 +30,8 @@ const addImagestoGallery = (res) => {
             <span class="photo__likes">${element.likes} likes</span>
             <div class="photo__comment">
                 <div class="photo__comment">
-                    <span class="photo__comment-author">${element.user.username}</span>${element.description}
+                <a href="profile.html?username=${element.user.username}">
+                    <span class="photo__comment-author">${element.user.username}</span></a>${element.description}
                 </div>
             </div>
         </div>
