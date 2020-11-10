@@ -8,7 +8,7 @@ const path = require('path');
 const morgan = require('morgan');
 const cors = require('cors');
 const dotenv = require('dotenv').config();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 const fetch = require('node-fetch');
 global.fetch = fetch;
