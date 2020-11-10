@@ -5,11 +5,11 @@ const path = require('path');
 // 1. Configuration here
 
 
-
-const PORT = process.env.PORT || 8080;
 const morgan = require('morgan');
 const cors = require('cors');
 const dotenv = require('dotenv').config();
+const PORT = process.env.PORT || 8080;
+
 const fetch = require('node-fetch');
 global.fetch = fetch;
 
